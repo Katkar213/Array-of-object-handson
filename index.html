@@ -17,33 +17,33 @@
     ['JOHN', 'BABA', 'YAGA', 'WICK'] </pre></h3>
 
     <pre>
-        let ans1=studentRecords.map((item)=>item.name.toUpperCase());
+      Ans:  let ans1=studentRecords.map((item)=>item.name.toUpperCase());
         console.log(ans1);</pre>
 
 <h3><pre>Q.2 Suppose we have the same dataset as above but this time we want to get the details of students who scored more than 50 marks.
 
     [{name: 'John', id: 123, marks: 98 },{name: 'Wick', id: 115, marks: 75 }]</pre></h3>
-    <pre>let ans2=studentRecords.filter((item)=>item.marks>50);
+    <pre>Ans: let ans2=studentRecords.filter((item)=>item.marks>50);
         console.log(ans2);</pre>
 
 <h3><pre>Q.3 Retrieve the details of students who scored more than 50 marks and have IDs greater than 120.</pre></h3>
-<pre>let ans3=studentRecords.filter((item)=>item.marks>50&&item.id>120);
+<pre>Ans: let ans3=studentRecords.filter((item)=>item.marks>50&&item.id>120);
     console.log(ans3);</pre>
 
 <h3> <pre>Q.4 Consider the same scenario we have discussed above, but this time we would like to know the sum total of the marks of the students.</pre></h3>
-<pre>let ans4=studentRecords.map((item1)=>item1.marks).reduce((pre,current)=>pre+=current);
+<pre>Ans: let ans4=studentRecords.map((item1)=>item1.marks).reduce((pre,current)=>pre+=current);
     console.log(ans4);</pre>
 
 <h3> <pre>Q.5 This time we want to get only the names of the students who scored more than 50 marks from the same dataset used above.</pre></h3>
-<pre>let ans5=studentRecords.filter((item)=>item.marks>50).map((item1)=>item1.name);
+<pre>Ans: let ans5=studentRecords.filter((item)=>item.marks>50).map((item1)=>item1.name);
     console.log(ans5);</pre>
 
 <h3> <pre>Q.6 This time we are required to print the sum of marks of the students with id > 120</pre></h3>
-<pre>let ans6=studentRecords.filter((item)=>item.id>120).map((item2)=>item2.marks).reduce((pre,cur)=>pre=pre+=cur);
+<pre>Ans: let ans6=studentRecords.filter((item)=>item.id>120).map((item2)=>item2.marks).reduce((pre,cur)=>pre=pre+=cur);
     console.log(ans6);</pre>
 
 <h3> <pre>Q.7 This time we are required to print the total marks of the students with marks greater than 50 after a grace of 15 marks has been added to those students who scored less than 50.</pre></h3>
-<pre>let ans7=studentRecords.map((e)=>{
+<pre>Ans: let ans7=studentRecords.map((e)=>{
     if(e.marks<50){
         e.marks+=15;
        
@@ -55,7 +55,7 @@
 console.log(ans7);</pre>
 
 <h3> <pre>Q.8 Create 6 objects , each object will have name, class, roll no as properties. Store these objects in an array of objects.</pre> </h3>
-<pre>let ans8=[];
+<pre>Ans: let ans8=[];
 
     function  Students(name1,class1,rollNo){
     this.name=name1;
